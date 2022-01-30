@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %} Mat Blog {% endblock %}
+
+{% block style %}
+
+  <link href="{% static "blog/all-posts.css" %}" rel="stylesheet">
+  <link href="{% static "blog/posts.css" %}" rel="stylesheet">
+
+{% endblock %}
+
+{% block body%}
+
+    <section id='all-posts'>
+        <h2>My collected hobbies!></h2>
+        <ul>
+            {% for post in all_posts %}
+                {% include 'blog/includes/post.html' %}
+            {% endfor %}
+        </ul>
+    </section>
+
+{% endblock %}

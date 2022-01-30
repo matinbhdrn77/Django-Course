@@ -1,0 +1,18 @@
+{% extends "challenges/layout.html" %}
+
+  {% block title %}
+    Monthly Challenge
+  {% endblock %}
+  
+  {% block content %}
+    <h1>Do this for {{ month|title }}</h1>
+    {% include 'challenges/includes/header.html' %}
+    {% if text %}
+      <h2>{{ text }}</h2>
+    {% else %}
+      <p>Not a task</p>
+    {% endif %}
+    
+  {% endblock %}
+
+  
