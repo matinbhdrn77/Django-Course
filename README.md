@@ -1,6 +1,6 @@
 # Django-Course
 
-4 simple project ad trying:
+4 simple projects ad trying:
 - ClassBaseView
 - Forms, ModelForms, Models
 - Session
